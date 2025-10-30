@@ -1,5 +1,7 @@
 package test_pkg_tribesindia;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
@@ -18,10 +20,10 @@ public class Login_test {
 	}
 	
 	@Test
-	public void test()
+	public void test() throws IOException
 	{
 		Login_page ob=new Login_page(d);
-		ob.setvalues("shamsy@gmail.com", "Shamsy01@password");
+		ob.setvalues();
 		ob.click();
 	}
 
